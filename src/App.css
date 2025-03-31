@@ -1,0 +1,175 @@
+html {
+  font-size: 62.5%;
+}
+
+.task__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  width: 90vw;
+  margin: 3rem auto;
+}
+
+.task {
+  background-color: #343a40;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 9px;
+}
+
+.task__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.task__content {
+  font-size: 1.4rem;
+  color: #ced4da;
+}
+
+.btn {
+  margin-right: 1rem;
+}
+
+.spacebar {
+  width: 90%;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 9px;
+}
+
+.footer {
+  color: #ced4da;
+  background-color: #343a40;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}
+
+.add__form {
+  background-color: #343a40;
+  padding: 2rem;
+  width: 30rem;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 9px;
+  margin: 0 auto;
+
+  /* text-align: justify; */
+}
+
+.add__form div label {
+  margin-right: 1rem;
+}
+
+.add__form div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.content__input {
+  width: 70%;
+  border: none;
+  padding: 1rem;
+  border-radius: 9px;
+}
+
+.taskForm {
+}
+
+.add {
+  background: none;
+  border: none;
+  background-color: #37b24d;
+  padding: 0.8rem 2rem;
+  border-radius: 100px;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.add:hover {
+  transform: scale(1.1);
+  background-color: #2b8a3e;
+}
+
+.addBtn {
+  text-align: center;
+}
+
+body {
+  background-color: #000;
+}
+
+.header {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.check {
+  background-color: #51cf66;
+}
+
+.check p {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sort {
+  background-color: #495057;
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem 0;
+}
+
+.sort select {
+  /* padding: 1rem; */
+}
+
+.empty__msg {
+  color: #fff;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.time {
+  font-size: 1.4rem;
+  color: #868e96;
+}
+
+.content {
+  margin: 0 0 5rem 0;
+}
+
+.state {
+  background-color: #40c057;
+  padding: 0.8rem 4rem;
+  color: #000;
+  font-weight: bolder;
+}
+
+@media (max-width: 40em) {
+  .task__list {
+    grid-template-columns: 1fr;
+    /* margin-right: 4rem; */
+  }
+  .content {
+    margin: 0 0 12rem 0;
+  }
+  .footer {
+    font-size: 1.2rem;
+  }
+  .state {
+    padding: 0.3rem 1rem;
+  }
+}
